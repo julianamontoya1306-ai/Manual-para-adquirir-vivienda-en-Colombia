@@ -5,7 +5,7 @@ import {
   DollarSign, 
   ShieldCheck, 
   ChevronRight, 
-  CheckCircle2, 
+  CheckCircle, 
   AlertTriangle,
   FileText
 } from 'lucide-react';
@@ -40,7 +40,7 @@ function App() {
               <Briefcase className="w-5 h-5" />
             </div>
             {selectedContract === contract.type && (
-              <CheckCircle2 className="w-5 h-5 text-brand-600" />
+              <CheckCircle className="w-5 h-5 text-brand-600" />
             )}
           </div>
           <h3 className="font-semibold text-slate-800 mb-1">{contract.label}</h3>
@@ -97,16 +97,16 @@ function App() {
              <h4 className="font-medium text-slate-900 mb-3">Recomendaciones</h4>
              <ul className="space-y-3">
                <li className="flex items-center gap-2 text-sm text-slate-600">
-                 <CheckCircle2 className="w-4 h-4 text-emerald-500 flex-shrink-0" />
+                 <CheckCircle className="w-4 h-4 text-emerald-500 flex-shrink-0" />
                  <span>Mantén tus pagos de seguridad social al día.</span>
                </li>
                <li className="flex items-center gap-2 text-sm text-slate-600">
-                 <CheckCircle2 className="w-4 h-4 text-emerald-500 flex-shrink-0" />
+                 <CheckCircle className="w-4 h-4 text-emerald-500 flex-shrink-0" />
                  <span>Guarda tus desprendibles de los últimos 6 meses.</span>
                </li>
                {info.type === ContractType.FIXED && (
                  <li className="flex items-center gap-2 text-sm text-slate-600">
-                   <CheckCircle2 className="w-4 h-4 text-emerald-500 flex-shrink-0" />
+                   <CheckCircle className="w-4 h-4 text-emerald-500 flex-shrink-0" />
                    <span>Intenta renovar el contrato antes de aplicar.</span>
                  </li>
                )}
@@ -252,7 +252,7 @@ function App() {
                    <label key={i} className="flex items-center gap-3 p-3 hover:bg-slate-50 rounded-lg cursor-pointer transition-colors group">
                      <div className="relative flex items-center">
                         <input type="checkbox" className="peer h-5 w-5 cursor-pointer appearance-none rounded-md border border-slate-300 transition-all checked:border-brand-500 checked:bg-brand-500 hover:border-brand-400" />
-                        <CheckCircle2 className="pointer-events-none absolute left-0 top-0 h-5 w-5 text-white opacity-0 peer-checked:opacity-100 transition-opacity" />
+                        <CheckCircle className="pointer-events-none absolute left-0 top-0 h-5 w-5 text-white opacity-0 peer-checked:opacity-100 transition-opacity" />
                      </div>
                      <span className="text-slate-700 group-hover:text-slate-900">{item}</span>
                    </label>
