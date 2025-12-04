@@ -225,7 +225,7 @@ function App() {
       <main className="flex-1 max-w-6xl mx-auto px-4 py-8 w-full">
         
         {activeTab === 'profile' && (
-          <div className="animate-in fade-in slide-in-from-bottom-4 duration-500">
+          <div className="animate-slide-up">
             <div className="text-center max-w-2xl mx-auto mb-10">
               <h2 className="text-3xl font-bold text-slate-900 mb-3">Prepara tu Perfil</h2>
               <p className="text-slate-600">
@@ -263,13 +263,13 @@ function App() {
         )}
 
         {activeTab === 'calculator' && (
-          <div className="animate-in fade-in slide-in-from-bottom-4 duration-500">
+          <div className="animate-slide-up">
              <IncomeCalculator />
           </div>
         )}
 
         {activeTab === 'guide' && (
-          <div className="animate-in fade-in slide-in-from-bottom-4 duration-500">
+          <div className="animate-slide-up">
              <div className="mb-8">
                <h2 className="text-2xl font-bold text-slate-900">Pilares Fundamentales</h2>
                <p className="text-slate-600">Conceptos claves que todo aspirante a vivienda debe dominar.</p>
@@ -279,7 +279,7 @@ function App() {
         )}
 
         {activeTab === 'ai' && (
-          <div className="animate-in fade-in slide-in-from-bottom-4 duration-500 max-w-3xl mx-auto">
+          <div className="animate-slide-up max-w-3xl mx-auto">
              <div className="mb-6 text-center">
                <h2 className="text-2xl font-bold text-slate-900">Asesor Virtual Inteligente</h2>
                <p className="text-slate-600">Pregunta sobre tu caso específico usando la información oficial de la guía.</p>
